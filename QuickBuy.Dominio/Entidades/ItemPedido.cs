@@ -8,7 +8,15 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if(PedidoId == 0)
+            {
+                AdicionarCritica("Crítica: Não foi identificado qual a referência do produto")
+            }
+
+            if(Quantidade == 0)
+            {
+                AdicionarCritica("Crítica: Quantidade não foi informado");
+            }
         }
     }
 }
