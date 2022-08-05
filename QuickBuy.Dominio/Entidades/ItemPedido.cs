@@ -10,7 +10,7 @@
         {
             if(PedidoId == 0)
             {
-                AdicionarCritica("Crítica: Não foi identificado qual a referência do produto")
+                AdicionarCritica("Crítica: Não foi identificado qual a referência do produto");
             }
 
             if(Quantidade == 0)
